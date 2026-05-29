@@ -48,12 +48,13 @@ openharmony_refs = [
     "origin/OpenHarmony-5.0.2-Release",
     "origin/OpenHarmony-5.0.3-Release",
     "origin/OpenHarmony-5.1.0-Release",
-
     # From mirror_gitcode.yml
     "origin/master",
 ]
 # Look for repo names in each ref
-openharmony_repos = parse_manifest_refs(manifest=openharmony_manifest, refs=openharmony_refs, restrict_remote="gitcode")
+openharmony_repos = parse_manifest_refs(
+    manifest=openharmony_manifest, refs=openharmony_refs, restrict_remote="gitcode"
+)
 
 # Always add the manifest so one can sync from this mirror
 openharmony_repos.add(RepoEntry("manifest"))
@@ -62,4 +63,9 @@ openharmony_repos.add(RepoEntry("manifest"))
 for repo in openharmony_repos:
     repo.groups.update(groups_for_repo(repo))
 
-write_manifest(filename="eclipse-oniro-mirrors-gitcode.xml", repos=openharmony_repos, remote_name="gitcode", remote_fetch="https://gitcode.com/openharmony/")
+write_manifest(
+    filename="eclipse-oniro-mirrors-gitcode.xml",
+    repos=openharmony_repos,
+    remote_name="gitcode",
+    remote_fetch="https://gitcode.com/openharmony/",
+)
