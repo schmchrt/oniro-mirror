@@ -59,6 +59,7 @@ def parse_manifest_refs(
     for index, ref in enumerate(refs, 1):
         print("\033[K[{}/{}] Parsing `{}`...".format(index, len(refs), ref), end="\r")
 
+        default_remote = None
         xml_todo = ["default.xml"]
 
         # Load the XML
@@ -76,6 +77,11 @@ def parse_manifest_refs(
             manifest_xml = ET.fromstring(manifest_contents)
 
             for child in manifest_xml:
+                if child.tag == "default":
+                    if "remote" in child.attrib:
+                        default_remote = child.attrib["remote"]
+                    continue
+
                 if child.tag == "include":
                     xml_todo.append(child.attrib["name"])
                     continue
@@ -85,16 +91,24 @@ def parse_manifest_refs(
                     continue
 
                 if restrict_remote is not None:
-                    if (
-                        "remote" in child.attrib
-                        and child.attrib["remote"] != restrict_remote
-                    ):
+                    if "remote" in child.attrib:
+                        effective_remote = child.attrib["remote"]
+                    elif default_remote is not None:
+                        effective_remote = default_remote
+                    else:
+                        print(
+                            "error: No known remote for project '{}'".format(
+                                child.attrib["name"]
+                            )
+                        )
+
+                    if effective_remote != restrict_remote:
                         if restrict_remote_noisy:
                             print(
                                 "Skipping project '{}' with non-{} remote '{}'".format(
                                     child.attrib["name"],
                                     restrict_remote,
-                                    child.attrib["remote"],
+                                    effective_remote,
                                 )
                             )
                         continue
