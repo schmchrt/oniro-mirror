@@ -7,8 +7,11 @@
            remote="oniro4openharmony"
            sync-j="4" />
 
+  <project name="device_board_oniro" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard" />
   <project name="device_board_rpi" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard" />
   <project name="device_soc_broadcom" groups="default,ohos:chipset,ohos:standard" />
+  <project name="device_soc_oniro" groups="default,ohos:chipset,ohos:standard" />
   <project name="manifest" />
   <project name="vendor_iscas" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
+  <project name="vendor_oniro" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
 </manifest>

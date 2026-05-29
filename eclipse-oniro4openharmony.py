@@ -30,6 +30,7 @@ oniro_refs = [
 oniro_repos = parse_manifest_refs(
     manifest=oniro_manifest,
     refs=oniro_refs,
+    manifest_file="oniro.xml",
     restrict_remote="oniro4openharmony",
     restrict_remote_noisy=False,
 )

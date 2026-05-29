@@ -50,6 +50,7 @@ def parse_manifest_refs(
     *,
     manifest,
     refs,
+    manifest_file="default.xml",
     restrict_remote=None,
     restrict_remote_noisy=True,
     keep_groups=True
@@ -60,7 +61,7 @@ def parse_manifest_refs(
         print("\033[K[{}/{}] Parsing `{}`...".format(index, len(refs), ref), end="\r")
 
         default_remote = None
-        xml_todo = ["default.xml"]
+        xml_todo = [manifest_file]
 
         # Load the XML
         while len(xml_todo) != 0:
