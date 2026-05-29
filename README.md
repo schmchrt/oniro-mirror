@@ -6,9 +6,10 @@ A collection of scripts and XML files for mirroring OpenHarmony, Oniro, and rela
 
 The following configurations are available:
 
-| Manifest                            | Source URL                         | Additional Compatible URLs                  | Description                                               |
-|:-----------------------------------:|:----------------------------------:|:-------------------------------------------:|:---------------------------------------------------------:|
-| `eclipse-oniro-mirrors-gitcode.xml` | `https://gitcode.com/openharmony/` | `https://github.com/eclipse-oniro-mirrors/` | Selective mirror of upstream OpenHarmony repositories.    |
+| Manifest                            | Source URL                                      | Additional Compatible URLs                  | Description                                               |
+|:-----------------------------------:|:-----------------------------------------------:|:-------------------------------------------:|:---------------------------------------------------------:|
+| `eclipse-oniro-mirrors-gitcode.xml` | `https://gitcode.com/openharmony/`              | `https://github.com/eclipse-oniro-mirrors/` | Selective mirror of upstream OpenHarmony repositories.    |
+| `eclipse-oniro4openharmony.xml`     | `https://github.com/eclipse-oniro4openharmony/` |                                             | Selective mirror of Oniro repositories.                   |
 
 ## Initialization
 

@@ -46,7 +46,14 @@ class RepoEntry:
         return (self.name, self.groups) < (other.name, other.groups)
 
 
-def parse_manifest_refs(*, manifest, refs, restrict_remote=None, keep_groups=True):
+def parse_manifest_refs(
+    *,
+    manifest,
+    refs,
+    restrict_remote=None,
+    restrict_remote_noisy=True,
+    keep_groups=True
+):
     repos = {}
 
     for index, ref in enumerate(refs, 1):
@@ -82,13 +89,14 @@ def parse_manifest_refs(*, manifest, refs, restrict_remote=None, keep_groups=Tru
                         "remote" in child.attrib
                         and child.attrib["remote"] != restrict_remote
                     ):
-                        print(
-                            "Skipping project '{}' with non-{} remote '{}'".format(
-                                child.attrib["name"],
-                                restrict_remote,
-                                child.attrib["remote"],
+                        if restrict_remote_noisy:
+                            print(
+                                "Skipping project '{}' with non-{} remote '{}'".format(
+                                    child.attrib["name"],
+                                    restrict_remote,
+                                    child.attrib["remote"],
+                                )
                             )
-                        )
                         continue
 
                 name = child.attrib["name"].rstrip("/")
