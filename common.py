@@ -44,7 +44,7 @@ class RepoEntry:
         return (self.name, self.groups) < (other.name, other.groups)
 
 def parse_manifest_refs(*, manifest, refs, restrict_remote=None, keep_groups=True):
-    repos = set()
+    repos = {}
 
     for index, ref in enumerate(refs, 1):
         print("\033[K[{}/{}] Parsing `{}`...".format(index, len(refs), ref), end="\r")
@@ -83,14 +83,13 @@ def parse_manifest_refs(*, manifest, refs, restrict_remote=None, keep_groups=Tru
     
                 name = child.attrib["name"].rstrip("/")
 
-                entry = RepoEntry(name)
+                if name not in repos:
+                    repos[name] = RepoEntry(name)
                 if keep_groups and "groups" in child.attrib:
-                    entry.groups.update(child.attrib["groups"].split(","))
-    
-                repos.add(entry)
+                    repos[name].groups.update(child.attrib["groups"].split(","))
 
 
-    return repos
+    return set(repos.values())
 
 def write_manifest(*, filename, repos, remote_name, remote_fetch):
     with open(filename, "w") as file:

@@ -72,7 +72,6 @@
   <project name="build" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="build_lite" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="bundlemanager_app_domain_verify" groups="default,ohos:standard,ohos:system" />
-  <project name="bundlemanager_bundle_framework" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="bundlemanager_bundle_framework" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="bundlemanager_bundle_framework_lite" groups="default,ohos:mini,ohos:small" />
   <project name="bundlemanager_bundle_tool" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
@@ -80,11 +79,8 @@
   <project name="bundlemanager_distributed_bundle_framework" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="bundlemanager_ecological_rule_manager" groups="default,ohos:standard,ohos:system" />
   <project name="busmanager_usb_manager" groups="default,ohos:standard,ohos:system" />
-  <project name="castengine_cast_framework" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
   <project name="castengine_cast_framework" groups="default,ohos:chipset,ohos:mini,ohos:standard,ohos:system" />
-  <project name="castengine_cast_plus_stream" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
   <project name="castengine_cast_plus_stream" groups="default,ohos:chipset,ohos:mini,ohos:standard,ohos:system" />
-  <project name="castengine_wifi_display" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
   <project name="castengine_wifi_display" groups="default,ohos:chipset,ohos:mini,ohos:standard,ohos:system" />
   <project name="commonlibrary_c_utils" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="commonlibrary_ets_utils" groups="default,ohos:standard,ohos:system" />
@@ -133,7 +129,6 @@
   <project name="device_board_hisilicon" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard" />
   <project name="device_board_hpmicro" groups="default,ohos:mini" />
   <project name="device_board_isoftstone" groups="default,ohos:chipset,ohos:standard" />
-  <project name="device_board_kaihong" groups="default,ohos:chipset,ohos:standard" />
   <project name="device_board_kaihong" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
   <project name="device_board_lango" groups="default,ohos:mini" />
   <project name="device_board_lockzhiner" groups="default,ohos:mini" />
@@ -161,19 +156,14 @@
   <project name="device_soc_unisoc" groups="default,ohos:chipset,ohos:standard" />
   <project name="device_soc_winnermicro" groups="default,ohos:chipset,ohos:mini" />
   <project name="deviceprofile_device_info_manager" groups="default,ohos:standard,ohos:system" />
-  <project name="distributeddatamgr_data_object" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_data_object" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
-  <project name="distributeddatamgr_data_share" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_data_share" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_datamgr_service" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_distributeddatamgr_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_file" groups="default,ohos:standard,ohos:system" />
-  <project name="distributeddatamgr_kv_store" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_kv_store" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_pasteboard" groups="default,ohos:standard,ohos:system" />
-  <project name="distributeddatamgr_preferences" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_preferences" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
-  <project name="distributeddatamgr_relational_store" groups="default,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_relational_store" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="distributeddatamgr_udmf" groups="default,ohos:standard,ohos:system" />
   <project name="distributedhardware_device_manager" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
@@ -222,11 +212,9 @@
   <project name="hiviewdfx_blackbox" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="hiviewdfx_blackbox_lite" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="hiviewdfx_faultloggerd" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
-  <project name="hiviewdfx_hiappevent" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hiappevent" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hichecker" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hicollie" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
-  <project name="hiviewdfx_hidumper" groups="default,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hidumper" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hidumper_lite" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="hiviewdfx_hievent_lite" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
@@ -248,7 +236,6 @@
   <project name="kernel_linux_build" groups="default,ohos:chipset,ohos:small,ohos:standard" />
   <project name="kernel_linux_common_modules" groups="default,ohos:chipset,ohos:small,ohos:standard,ohos:system" />
   <project name="kernel_linux_config" groups="default,ohos:chipset,ohos:small,ohos:standard" />
-  <project name="kernel_linux_patches" groups="default,ohos:chipset,ohos:small,ohos:standard" />
   <project name="kernel_linux_patches" groups="default,ohos:chipset,ohos:small,ohos:standard,ohos:system" />
   <project name="kernel_liteos_a" groups="default,ohos:mini,ohos:small" />
   <project name="kernel_liteos_m" groups="default,ohos:mini" />
@@ -273,7 +260,6 @@
   <project name="multimedia_media_utils_lite" groups="default,ohos:mini,ohos:small" />
   <project name="multimedia_midi_framework" groups="default,ohos:standard,ohos:system" />
   <project name="multimedia_multimedia_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
-  <project name="multimedia_player_framework" groups="default,ohos:standard,ohos:system" />
   <project name="multimedia_player_framework" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="multimedia_ringtone_library" groups="default,ohos:standard,ohos:system" />
   <project name="multimedia_utils_lite" groups="default,ohos:mini,ohos:small" />
@@ -286,7 +272,6 @@
   <project name="notification_eventhandler" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="notification_notification_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
   <project name="officeservice_object_editor" groups="default,ohos:standard,ohos:system" />
-  <project name="ostest_wukong" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="ostest_wukong" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="powermgr_battery_lite" groups="default,ohos:mini,ohos:small" />
   <project name="powermgr_battery_manager" groups="default,ohos:standard,ohos:system" />
@@ -326,7 +311,6 @@
   <project name="security_security_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
   <project name="security_security_component_manager" groups="default,ohos:standard,ohos:system" />
   <project name="security_security_guard" groups="default,ohos:standard,ohos:system" />
-  <project name="security_selinux_adapter" groups="default,ohos:standard,ohos:system" />
   <project name="security_selinux_adapter" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="sensors_medical_sensor" groups="default,ohos:standard,ohos:system" />
   <project name="sensors_miscdevice" groups="default,ohos:standard,ohos:system" />
@@ -360,7 +344,6 @@
   <project name="telephony_state_registry" groups="default,ohos:standard,ohos:system" />
   <project name="telephony_telephony_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
   <project name="telephony_telephony_data" groups="default,ohos:standard,ohos:system" />
-  <project name="testfwk_arkxtest" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="testfwk_arkxtest" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="testfwk_developer_test" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="testfwk_testfwk_cangjie_wrapper" groups="cangjie,default,ohos:standard,ohos:system" />
@@ -482,7 +465,6 @@
   <project name="third_party_openssl" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="third_party_optimized_routines" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="third_party_parse5" groups="default,ohos:small,ohos:standard,ohos:system" />
-  <project name="third_party_pcre2" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="third_party_pcre2" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="third_party_pixman" groups="default,ohos:standard,ohos:system" />
   <project name="third_party_popt" groups="default,ohos:mini,ohos:small,ohos:standard,ohos:system" />
@@ -554,7 +536,6 @@
   <project name="third_party_rust_version_check" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="third_party_rust_which-rs" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="third_party_sane-airscan" groups="default,ohos:standard,ohos:system" />
-  <project name="third_party_selinux" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="third_party_selinux" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard,ohos:system" />
   <project name="third_party_skia" groups="default,ohos:standard,ohos:system" />
   <project name="third_party_sonic" groups="default,ohos:standard,ohos:system" />
@@ -594,7 +575,6 @@
   <project name="useriam_face_auth" groups="default,ohos:standard,ohos:system" />
   <project name="useriam_fingerprint_auth" groups="default,ohos:standard,ohos:system" />
   <project name="useriam_pin_auth" groups="default,ohos:standard,ohos:system" />
-  <project name="useriam_user_auth_framework" groups="default,ohos:standard,ohos:system" />
   <project name="useriam_user_auth_framework" groups="default,ohos:chipset,ohos:standard,ohos:system" />
   <project name="utils_memory" groups="default,ohos:standard,ohos:system" />
   <project name="utils_system_resources" groups="default,ohos:standard,ohos:system" />
@@ -609,7 +589,6 @@
   <project name="vendor_hisilicon" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard" />
   <project name="vendor_hpmicro" groups="default,ohos:mini" />
   <project name="vendor_isoftstone" groups="default,ohos:chipset,ohos:standard" />
-  <project name="vendor_kaihong" groups="default,ohos:chipset,ohos:standard" />
   <project name="vendor_kaihong" groups="default,ohos:chipset,ohos:mini,ohos:standard" />
   <project name="vendor_lockzhiner" groups="default,ohos:mini" />
   <project name="vendor_ohemu" groups="default,ohos:chipset,ohos:mini,ohos:small,ohos:standard" />
